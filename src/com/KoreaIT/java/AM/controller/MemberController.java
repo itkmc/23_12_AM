@@ -120,7 +120,7 @@ public class MemberController extends Controller {
 
 	}
 
-	private Member getMemberByLoginId(String loginId) {
+	public Member getMemberByLoginId(String loginId) {
 		for (Member member : members) {
 			if (member.getLoginId().equals(loginId)) {
 				return member;
